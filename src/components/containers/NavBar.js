@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import "../scss/components/NavBar.scss";
+import "../../scss/components/NavBar.scss";
 
 const NavBar = (props) => {
-  const pageLinks = props.pages.map(page => <NavLink key={page.id} to={`/tests/${page.id}`}><p>{page.name}</p></NavLink>)
+  const pageLinks = [];
 
   return (
     <section className="NavBar">
